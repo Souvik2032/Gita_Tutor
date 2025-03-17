@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solution - Not Getting Focused on Study</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Import custom font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Gita Guidance</h1>
+  </header>
+  
+  <main>
+    <!-- Section: Gita's Wisdom with Full Reference -->
+    <section class="geeta-reference">
+      <h2>Gita's Wisdom</h2>
+      <p>
+        In the Gita, Lord Krishna teaches the value of self-discipline and focus. For example, in <strong>Chapter 6, Verse 5 (Page 123)</strong> it is said:
+      </p>
+      <div class="sloka">
+        <p class="original">उद्धरेदात्मनाऽत्मानं नाऽत्मानमवसादयेत्</p>
+      </div>
+      
+      <!-- Language Choice -->
+      <div class="language-choice">
+        <p><strong>Choose Your Language:</strong></p>
+        <label>
+          <input type="radio" name="lang" value="eng" checked onclick="showTranslation('eng')">
+          English
+        </label>
+        <label>
+          <input type="radio" name="lang" value="hin" onclick="showTranslation('hin')">
+          Hindi
+        </label>
+      </div>
+      
+      <!-- Translation Texts -->
+      <div id="translation-eng" class="translation">
+        <p><strong>English:</strong> One must lift oneself up, not let oneself fall.</p>
+      </div>
+      <div id="translation-hin" class="translation" style="display: none;">
+        <p><strong>हिंदी:</strong> स्वयं को उठाओ, खुद को गिरने मत दो।</p>
+      </div>
+    </section>
+    
+    <!-- Section: Real Life Example -->
+    <section class="real-life-example">
+      <h2>Real Life Example</h2>
+      <p>
+        Imagine a student who finds it hard to focus on studies because of many distractions. Just like a lamp that needs a steady wick to shine, the student needs to control distractions and work steadily. Following the Gita’s advice, by lifting oneself up (using simple daily habits and focus), the student can get back on track.
+      </p>
+    </section>
+    
+    <nav class="page-navigation">
+      <a href="index.html" target="_blank">Back to Home</a>
+    </nav>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Gita Guidance. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+  <script>
+    // JavaScript to switch translation language based on user choice.
+    function showTranslation(lang) {
+      if (lang === 'eng') {
+        document.getElementById('translation-eng').style.display = 'block';
+        document.getElementById('translation-hin').style.display = 'none';
+      } else {
+        document.getElementById('translation-eng').style.display = 'none';
+        document.getElementById('translation-hin').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
